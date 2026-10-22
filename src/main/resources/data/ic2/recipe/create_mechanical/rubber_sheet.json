@@ -1,0 +1,23 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "RRR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "tag": "c:rubber"
+    }
+  },
+  "result": {
+    "id": "ic2:rubber_sheet",
+    "count": 3
+  },
+  "acceptMirrored": true
+}

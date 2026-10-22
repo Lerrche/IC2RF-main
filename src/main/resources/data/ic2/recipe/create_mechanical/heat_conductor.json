@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "RCR",
+    "RCR",
+    "RCR"
+  ],
+  "key": {
+    "R": {
+      "tag": "c:rubber"
+    },
+    "C": {
+      "tag": "c:plates/copper"
+    }
+  },
+  "result": {
+    "id": "ic2:heat_conductor"
+  },
+  "acceptMirrored": true
+}

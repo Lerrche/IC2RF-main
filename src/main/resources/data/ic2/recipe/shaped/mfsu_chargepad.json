@@ -9,7 +9,7 @@
       "item": "ic2:mfsu"
     },
     "R": {
-      "item": "ic2:rubber"
+      "tag": "c:rubber"
     },
     "C": {
       "item": "ic2:circuit"

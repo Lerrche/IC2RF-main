@@ -1,0 +1,38 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "ABA",
+    "CDC",
+    "EFE"
+  ],
+  "key": {
+    "A": {
+      "item": "ic2:advanced_heat_exchanger"
+    },
+    "B": {
+      "item": "ic2:advanced_re_battery"
+    },
+    "C": {
+      "item": "ic2:luminator"
+    },
+    "D": {
+      "item": "ic2:reinforced_glass"
+    },
+    "E": {
+      "tag": "c:rubber"
+    },
+    "F": {
+      "item": "ic2:advanced_circuit"
+    }
+  },
+  "result": {
+    "id": "ic2:night_vision_goggles"
+  },
+  "acceptMirrored": true
+}

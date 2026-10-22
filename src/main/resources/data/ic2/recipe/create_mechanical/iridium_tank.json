@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "PUP",
+    "U U",
+    "PUP"
+  ],
+  "key": {
+    "U": {
+      "item": "ic2:empty_cell"
+    },
+    "P": {
+      "item": "ic2:iridium"
+    }
+  },
+  "result": {
+    "id": "ic2:iridium_tank"
+  },
+  "acceptMirrored": true
+}

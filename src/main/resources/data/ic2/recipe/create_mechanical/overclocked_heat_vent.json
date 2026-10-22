@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    " G ",
+    "GVG",
+    " G "
+  ],
+  "key": {
+    "V": {
+      "item": "ic2:reactor_heat_vent"
+    },
+    "G": {
+      "tag": "c:plates/gold"
+    }
+  },
+  "result": {
+    "id": "ic2:overclocked_heat_vent"
+  },
+  "acceptMirrored": true
+}

@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "AnA",
+    "ILI",
+    "IAI"
+  ],
+  "key": {
+    "n": {
+      "item": "ic2:nano_chestplate"
+    },
+    "I": {
+      "item": "ic2:iridium"
+    },
+    "L": {
+      "item": "ic2:lapotron_crystal"
+    },
+    "A": {
+      "item": "ic2:alloy"
+    }
+  },
+  "result": {
+    "id": "ic2:quantum_chestplate"
+  },
+  "acceptMirrored": true
+}

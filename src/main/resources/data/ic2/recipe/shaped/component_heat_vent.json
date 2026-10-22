@@ -10,7 +10,7 @@
       "item": "minecraft:iron_bars"
     },
     "B": {
-      "item": "ic2:tin_plate"
+      "tag": "c:plates/tin"
     },
     "C": {
       "item": "ic2:heat_vent"

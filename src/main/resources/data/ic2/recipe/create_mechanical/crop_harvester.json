@@ -1,0 +1,35 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "ABA",
+    "CDC",
+    "EEE"
+  ],
+  "key": {
+    "A": {
+      "item": "ic2:circuit"
+    },
+    "B": {
+      "item": "minecraft:chest"
+    },
+    "C": {
+      "item": "minecraft:shears"
+    },
+    "D": {
+      "item": "ic2:machine"
+    },
+    "E": {
+      "item": "ic2:crop_stick"
+    }
+  },
+  "result": {
+    "id": "ic2:crop_harvester"
+  },
+  "acceptMirrored": true
+}

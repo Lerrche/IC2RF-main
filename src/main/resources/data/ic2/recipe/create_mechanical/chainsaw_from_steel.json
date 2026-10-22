@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    " AA",
+    "ABA",
+    "CA "
+  ],
+  "key": {
+    "A": {
+      "item": "ic2:steel_ingot"
+    },
+    "B": {
+      "item": "ic2:circuit"
+    },
+    "C": {
+      "item": "ic2:re_battery"
+    }
+  },
+  "result": {
+    "id": "ic2:chainsaw"
+  },
+  "acceptMirrored": true
+}

@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "IBI",
+    "ICI",
+    "IGI"
+  ],
+  "key": {
+    "I": {
+      "item": "ic2:iron_casing"
+    },
+    "B": {
+      "item": "ic2:re_battery"
+    },
+    "G": {
+      "item": "ic2:heat_conductor"
+    },
+    "C": {
+      "item": "ic2:circuit"
+    }
+  },
+  "result": {
+    "id": "ic2:electric_heat_generator"
+  },
+  "acceptMirrored": true
+}

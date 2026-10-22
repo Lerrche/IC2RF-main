@@ -1,0 +1,31 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "CPC",
+    "RBR"
+  ],
+  "key": {
+    "B": {
+      "item": "ic2:mfsu"
+    },
+    "R": {
+      "tag": "c:rubber"
+    },
+    "C": {
+      "item": "ic2:circuit"
+    },
+    "P": {
+      "item": "minecraft:stone_pressure_plate"
+    }
+  },
+  "result": {
+    "id": "ic2:mfsu_chargepad"
+  },
+  "acceptMirrored": true
+}

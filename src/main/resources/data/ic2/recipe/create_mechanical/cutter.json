@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "A A",
+    " A ",
+    "I I"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:plates/iron"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "ic2:cutter"
+  },
+  "acceptMirrored": true
+}

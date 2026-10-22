@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "SAS",
+    "SCS",
+    "SAS"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:sand"
+    },
+    "C": {
+      "item": "minecraft:clay_ball"
+    },
+    "S": {
+      "tag": "c:dusts/stone"
+    }
+  },
+  "result": {
+    "id": "ic2:cf_powder"
+  },
+  "acceptMirrored": true
+}

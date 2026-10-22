@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "UUU",
+    "UMU",
+    "CCC"
+  ],
+  "key": {
+    "M": {
+      "item": "ic2:machine"
+    },
+    "U": {
+      "item": "ic2:fluid_ejector_upgrade"
+    },
+    "C": {
+      "item": "ic2:empty_cell"
+    }
+  },
+  "result": {
+    "id": "ic2:fluid_distributor"
+  },
+  "acceptMirrored": true
+}

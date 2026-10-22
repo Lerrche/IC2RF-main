@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:iron_bars"
+    },
+    "B": {
+      "tag": "c:plates/tin"
+    },
+    "C": {
+      "item": "ic2:heat_vent"
+    }
+  },
+  "result": {
+    "id": "ic2:component_heat_vent"
+  },
+  "acceptMirrored": true
+}

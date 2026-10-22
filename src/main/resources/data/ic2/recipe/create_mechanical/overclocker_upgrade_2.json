@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "CCC",
+    "WEW"
+  ],
+  "key": {
+    "C": {
+      "item": "ic2:reactor_coolant_cell"
+    },
+    "W": {
+      "item": "ic2:insulated_copper_cable"
+    },
+    "E": {
+      "item": "ic2:circuit"
+    }
+  },
+  "result": {
+    "id": "ic2:overclocker_upgrade",
+    "count": 2
+  },
+  "acceptMirrored": true
+}

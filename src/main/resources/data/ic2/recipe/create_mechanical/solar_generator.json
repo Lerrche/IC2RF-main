@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "CgC",
+    "gCg",
+    "cGc"
+  ],
+  "key": {
+    "G": {
+      "item": "ic2:generator"
+    },
+    "C": {
+      "tag": "c:dusts/coal"
+    },
+    "g": {
+      "item": "minecraft:glass"
+    },
+    "c": {
+      "item": "ic2:circuit"
+    }
+  },
+  "result": {
+    "id": "ic2:solar_generator"
+  },
+  "acceptMirrored": true
+}

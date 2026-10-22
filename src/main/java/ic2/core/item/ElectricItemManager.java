@@ -7,6 +7,7 @@ import ic2.core.IC2;
 import ic2.core.slot.ArmorSlot;
 import ic2.core.util.StackUtil;
 import ic2.core.util.Util;
+import ic2.integration.curios.CuriosCompat;
 import java.util.List;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -178,31 +179,45 @@ public class ElectricItemManager implements IElectricItemManager {
     boolean transferred = false;
 
     for (EquipmentSlot slot : ArmorSlot.getAll()) {
-      ItemStack source = entity.getItemBySlot(slot);
-      if (source != null) {
-        int tier;
-        if (source.getItem() instanceof IElectricItem) {
-          tier = ((IElectricItem) source.getItem()).getTier(target);
-        } else {
-          tier = Integer.MAX_VALUE;
-        }
-
-        double transfer =
-            ElectricItem.manager.discharge(
-                source, Double.POSITIVE_INFINITY, Integer.MAX_VALUE, true, true, true);
-        if (!(transfer <= 0.0)) {
-          transfer = ElectricItem.manager.charge(target, transfer, tier, true, false);
-          if (!(transfer <= 0.0)) {
-            ElectricItem.manager.discharge(source, transfer, Integer.MAX_VALUE, true, true, false);
-            transferred = true;
-          }
-        }
-      }
+      transferred |= this.transferFromSource(target, entity, entity.getItemBySlot(slot));
     }
+
+    final boolean[] curiosTransferred = {false};
+    CuriosCompat.forEachEquippedStack(
+        entity, source -> curiosTransferred[0] |= this.transferFromSource(target, entity, source));
+    transferred |= curiosTransferred[0];
 
     if (transferred && entity instanceof Player && IC2.sideProxy.isSimulating()) {
       ((Player) entity).containerMenu.broadcastChanges();
     }
+  }
+
+  private boolean transferFromSource(ItemStack target, LivingEntity entity, ItemStack source) {
+    if (source == null || source.isEmpty()) {
+      return false;
+    }
+
+    int tier;
+    if (source.getItem() instanceof IElectricItem electricItem) {
+      tier = electricItem.getTier(target);
+    } else {
+      tier = Integer.MAX_VALUE;
+    }
+
+    double transfer =
+        ElectricItem.manager.discharge(
+            source, Double.POSITIVE_INFINITY, Integer.MAX_VALUE, true, true, true);
+    if (transfer <= 0.0) {
+      return false;
+    }
+
+    transfer = ElectricItem.manager.charge(target, transfer, tier, true, false);
+    if (transfer <= 0.0) {
+      return false;
+    }
+
+    ElectricItem.manager.discharge(source, transfer, Integer.MAX_VALUE, true, true, false);
+    return true;
   }
 
   @Override

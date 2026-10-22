@@ -1,0 +1,22 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "B"
+  ],
+  "key": {
+    "B": {
+      "item": "ic2:silver_block"
+    }
+  },
+  "result": {
+    "id": "ic2:silver_ingot",
+    "count": 9
+  },
+  "acceptMirrored": true
+}

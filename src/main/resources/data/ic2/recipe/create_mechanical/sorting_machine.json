@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "UBU",
+    "UMU",
+    "UCU"
+  ],
+  "key": {
+    "M": {
+      "item": "ic2:machine"
+    },
+    "U": {
+      "item": "ic2:ejector_upgrade"
+    },
+    "B": {
+      "item": "ic2:circuit"
+    },
+    "C": {
+      "tag": "c:chests/wooden"
+    }
+  },
+  "result": {
+    "id": "ic2:sorting_machine"
+  },
+  "acceptMirrored": true
+}

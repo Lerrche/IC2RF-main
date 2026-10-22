@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "GTG",
+    "DMD",
+    "GDG"
+  ],
+  "key": {
+    "T": {
+      "item": "ic2:blank_tfbp"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "D": {
+      "item": "minecraft:dirt"
+    },
+    "M": {
+      "item": "ic2:advanced_machine"
+    }
+  },
+  "result": {
+    "id": "ic2:terraformer"
+  },
+  "acceptMirrored": true
+}

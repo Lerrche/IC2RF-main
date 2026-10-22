@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "TCT",
+    "TcT",
+    "TCT"
+  ],
+  "key": {
+    "C": {
+      "item": "ic2:triple_reactor_coolant_cell"
+    },
+    "T": {
+      "tag": "c:plates/tin"
+    },
+    "c": {
+      "tag": "c:plates/iron"
+    }
+  },
+  "result": {
+    "id": "ic2:sextuple_reactor_coolant_cell"
+  },
+  "acceptMirrored": true
+}

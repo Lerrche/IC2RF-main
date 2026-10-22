@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    " E ",
+    "TMT",
+    "KKK"
+  ],
+  "key": {
+    "E": {
+      "item": "ic2:circuit"
+    },
+    "T": {
+      "item": "ic2:tool_box"
+    },
+    "M": {
+      "item": "ic2:machine"
+    },
+    "K": {
+      "item": "ic2:coil"
+    }
+  },
+  "result": {
+    "id": "ic2:metal_former"
+  },
+  "acceptMirrored": true
+}

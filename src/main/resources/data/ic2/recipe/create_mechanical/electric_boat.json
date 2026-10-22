@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "AAA",
+    "RBR",
+    "RMR"
+  ],
+  "key": {
+    "A": {
+      "item": "ic2:insulated_copper_cable"
+    },
+    "R": {
+      "tag": "c:plates/iron"
+    },
+    "B": {
+      "item": "ic2:electric_motor"
+    },
+    "M": {
+      "item": "ic2:iron_rotor"
+    }
+  },
+  "result": {
+    "id": "ic2:electric_boat"
+  },
+  "acceptMirrored": true
+}

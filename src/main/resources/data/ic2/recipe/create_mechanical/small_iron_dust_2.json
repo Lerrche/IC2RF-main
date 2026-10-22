@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "TCT",
+    "CTC",
+    "TCT"
+  ],
+  "key": {
+    "C": {
+      "tag": "c:dusts/copper"
+    },
+    "T": {
+      "tag": "c:dusts/tin"
+    }
+  },
+  "result": {
+    "id": "ic2:small_iron_dust"
+  },
+  "acceptMirrored": true
+}

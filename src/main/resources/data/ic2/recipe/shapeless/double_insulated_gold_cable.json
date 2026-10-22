@@ -2,7 +2,7 @@
   "type": "ic2:shapeless",
   "ingredients": [
     {
-      "item": "ic2:rubber"
+      "tag": "c:rubber"
     },
     {
       "item": "ic2:insulated_gold_cable"

@@ -1,0 +1,35 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "PGP",
+    "CBC",
+    "ccc"
+  ],
+  "key": {
+    "B": {
+      "item": "ic2:advanced_re_battery"
+    },
+    "c": {
+      "item": "ic2:insulated_copper_cable"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "C": {
+      "item": "ic2:circuit"
+    },
+    "P": {
+      "item": "ic2:gold_casing"
+    }
+  },
+  "result": {
+    "id": "ic2:scanner"
+  },
+  "acceptMirrored": true
+}

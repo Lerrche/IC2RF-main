@@ -1,0 +1,25 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "ICI",
+    "III"
+  ],
+  "key": {
+    "C": {
+      "tag": "c:chests/wooden"
+    },
+    "I": {
+      "item": "ic2:bronze_casing"
+    }
+  },
+  "result": {
+    "id": "ic2:tool_box"
+  },
+  "acceptMirrored": true
+}

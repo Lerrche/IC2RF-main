@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "LCL",
+    "LDL",
+    "LCL"
+  ],
+  "key": {
+    "D": {
+      "item": "ic2:energy_crystal"
+    },
+    "C": {
+      "item": "ic2:advanced_circuit"
+    },
+    "L": {
+      "tag": "c:dusts/lapis"
+    }
+  },
+  "result": {
+    "id": "ic2:lapotron_crystal"
+  },
+  "acceptMirrored": true
+}

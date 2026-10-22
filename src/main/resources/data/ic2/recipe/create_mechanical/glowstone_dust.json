@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "RGR",
+    "GRG",
+    "RGR"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "G": {
+      "tag": "c:dusts/gold"
+    }
+  },
+  "result": {
+    "id": "minecraft:glowstone_dust"
+  },
+  "acceptMirrored": true
+}

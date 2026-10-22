@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "CCC",
+    "BSS",
+    "ECC"
+  ],
+  "key": {
+    "S": {
+      "item": "ic2:iron_shaft"
+    },
+    "B": {
+      "item": "ic2:copper_boiler"
+    },
+    "C": {
+      "item": "ic2:steel_casing"
+    },
+    "E": {
+      "item": "ic2:empty_cell"
+    }
+  },
+  "result": {
+    "id": "ic2:steam_kinetic_generator"
+  },
+  "acceptMirrored": true
+}

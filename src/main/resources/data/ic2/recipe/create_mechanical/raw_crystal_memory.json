@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "SOS",
+    "OSO",
+    "SOS"
+  ],
+  "key": {
+    "O": {
+      "tag": "c:dusts/obsidian"
+    },
+    "S": {
+      "item": "ic2:silicon_dioxide_dust"
+    }
+  },
+  "result": {
+    "id": "ic2:raw_crystal_memory"
+  },
+  "acceptMirrored": true
+}

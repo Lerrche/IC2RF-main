@@ -7,7 +7,7 @@
   ],
   "key": {
     "R": {
-      "item": "ic2:rubber"
+      "tag": "c:rubber"
     },
     "W": {
       "tag": "minecraft:wool"

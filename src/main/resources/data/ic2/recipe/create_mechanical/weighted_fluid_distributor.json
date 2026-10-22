@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "CUC",
+    "UMU",
+    "CIC"
+  ],
+  "key": {
+    "M": {
+      "item": "ic2:machine"
+    },
+    "C": {
+      "item": "ic2:empty_cell"
+    },
+    "U": {
+      "item": "ic2:fluid_ejector_upgrade"
+    },
+    "I": {
+      "item": "ic2:fluid_pulling_upgrade"
+    }
+  },
+  "result": {
+    "id": "ic2:weighted_fluid_distributor"
+  },
+  "acceptMirrored": true
+}

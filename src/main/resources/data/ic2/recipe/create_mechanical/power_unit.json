@@ -1,0 +1,35 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "BAC",
+    "BIM",
+    "BAC"
+  ],
+  "key": {
+    "C": {
+      "item": "ic2:iron_casing"
+    },
+    "B": {
+      "item": "ic2:re_battery"
+    },
+    "I": {
+      "item": "ic2:circuit"
+    },
+    "M": {
+      "item": "ic2:electric_motor"
+    },
+    "A": {
+      "item": "ic2:copper_cable"
+    }
+  },
+  "result": {
+    "id": "ic2:power_unit"
+  },
+  "acceptMirrored": true
+}

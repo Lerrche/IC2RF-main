@@ -1,0 +1,26 @@
+{
+  "type": "create:splashing",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "ic2:crushed_copper"
+    }
+  ],
+  "results": [
+    {
+      "id": "ic2:purified_copper"
+    },
+    {
+      "id": "ic2:small_copper_dust",
+      "count": 2
+    },
+    {
+      "id": "ic2:stone_dust"
+    }
+  ]
+}

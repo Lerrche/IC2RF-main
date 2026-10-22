@@ -7,7 +7,7 @@
   ],
   "key": {
     "A": {
-      "item": "ic2:steel_plate"
+      "tag": "c:plates/steel"
     },
     "B": {
       "item": "ic2:iron_cutting_blade"

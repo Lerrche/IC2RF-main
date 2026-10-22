@@ -7,7 +7,7 @@
   ],
   "key": {
     "R": {
-      "item": "ic2:rubber"
+      "tag": "c:rubber"
     },
     "O": {
       "item": "minecraft:orange_dye"

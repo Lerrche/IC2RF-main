@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "CCC",
+    "CcC",
+    "CCC"
+  ],
+  "key": {
+    "c": {
+      "item": "ic2:reactor_plating"
+    },
+    "C": {
+      "tag": "c:plates/copper"
+    }
+  },
+  "result": {
+    "id": "ic2:reactor_heat_plating"
+  },
+  "acceptMirrored": true
+}

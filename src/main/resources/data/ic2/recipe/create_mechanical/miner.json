@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    " X ",
+    "CMC",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "item": "ic2:mining_pipe"
+    },
+    "M": {
+      "item": "ic2:machine"
+    },
+    "C": {
+      "item": "ic2:circuit"
+    },
+    "X": {
+      "item": "minecraft:chest"
+    }
+  },
+  "result": {
+    "id": "ic2:miner"
+  },
+  "acceptMirrored": true
+}

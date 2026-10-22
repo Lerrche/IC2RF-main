@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "RRR",
+    "RVR",
+    "RSR"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "V": {
+      "item": "ic2:heat_vent"
+    },
+    "S": {
+      "item": "ic2:heat_exchanger"
+    }
+  },
+  "result": {
+    "id": "ic2:rsh_condensator"
+  },
+  "acceptMirrored": true
+}

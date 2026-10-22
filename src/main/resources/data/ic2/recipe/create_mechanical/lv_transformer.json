@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "PCP",
+    "PcP",
+    "PCP"
+  ],
+  "key": {
+    "P": {
+      "tag": "minecraft:planks"
+    },
+    "C": {
+      "item": "ic2:insulated_tin_cable"
+    },
+    "c": {
+      "item": "ic2:coil"
+    }
+  },
+  "result": {
+    "id": "ic2:lv_transformer"
+  },
+  "acceptMirrored": true
+}

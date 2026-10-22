@@ -1,0 +1,25 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "CRC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "ic2:carbon_plate"
+    },
+    "R": {
+      "item": "ic2:rubber_boat"
+    }
+  },
+  "result": {
+    "id": "ic2:carbon_boat"
+  },
+  "acceptMirrored": true
+}

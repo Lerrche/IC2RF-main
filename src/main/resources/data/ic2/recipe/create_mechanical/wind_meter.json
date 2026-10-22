@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    " A ",
+    "ABA",
+    " AC"
+  ],
+  "key": {
+    "A": {
+      "item": "ic2:tin_casing"
+    },
+    "B": {
+      "item": "ic2:bronze_casing"
+    },
+    "C": {
+      "item": "ic2:small_power_unit"
+    }
+  },
+  "result": {
+    "id": "ic2:wind_meter"
+  },
+  "acceptMirrored": true
+}

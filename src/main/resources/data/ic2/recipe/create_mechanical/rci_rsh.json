@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "ECE",
+    "CMC",
+    "EBE"
+  ],
+  "key": {
+    "E": {
+      "item": "ic2:ejector_upgrade"
+    },
+    "C": {
+      "item": "ic2:rsh_condensator"
+    },
+    "M": {
+      "item": "ic2:advanced_machine"
+    },
+    "B": {
+      "item": "ic2:item_buffer"
+    }
+  },
+  "result": {
+    "id": "ic2:rci_rsh"
+  },
+  "acceptMirrored": true
+}

@@ -1,0 +1,31 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "InI",
+    "RLR"
+  ],
+  "key": {
+    "n": {
+      "item": "ic2:nano_boots"
+    },
+    "I": {
+      "item": "ic2:iridium"
+    },
+    "L": {
+      "item": "ic2:lapotron_crystal"
+    },
+    "R": {
+      "item": "ic2:rubber_boots"
+    }
+  },
+  "result": {
+    "id": "ic2:quantum_boots"
+  },
+  "acceptMirrored": true
+}

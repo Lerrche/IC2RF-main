@@ -1,0 +1,23 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "UUU",
+    "UUU",
+    "UUU"
+  ],
+  "key": {
+    "U": {
+      "item": "ic2:small_uranium_235"
+    }
+  },
+  "result": {
+    "id": "ic2:uranium_235"
+  },
+  "acceptMirrored": true
+}

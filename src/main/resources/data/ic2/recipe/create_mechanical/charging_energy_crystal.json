@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "ic2:component_heat_exchanger"
+    },
+    "B": {
+      "item": "ic2:energy_crystal"
+    },
+    "C": {
+      "item": "ic2:advanced_charging_re_battery"
+    }
+  },
+  "result": {
+    "id": "ic2:charging_energy_crystal"
+  },
+  "acceptMirrored": true
+}

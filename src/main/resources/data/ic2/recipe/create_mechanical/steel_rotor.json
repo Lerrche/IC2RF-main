@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "ic2:steel_rotor_blade"
+    },
+    "B": {
+      "item": "ic2:iron_shaft"
+    }
+  },
+  "result": {
+    "id": "ic2:steel_rotor"
+  },
+  "acceptMirrored": true
+}

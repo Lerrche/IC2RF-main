@@ -7,7 +7,7 @@
   ],
   "key": {
     "A": {
-      "item": "ic2:gold_plate"
+      "tag": "c:plates/gold"
     },
     "B": {
       "item": "ic2:heat_exchanger"

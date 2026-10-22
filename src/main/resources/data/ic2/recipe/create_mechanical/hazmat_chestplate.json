@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "R R",
+    "ROR",
+    "ROR"
+  ],
+  "key": {
+    "R": {
+      "tag": "c:rubber"
+    },
+    "O": {
+      "item": "minecraft:orange_dye"
+    }
+  },
+  "result": {
+    "id": "ic2:hazmat_chestplate"
+  },
+  "acceptMirrored": true
+}

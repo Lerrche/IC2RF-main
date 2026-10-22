@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "ABA",
+    "ACA",
+    "D D"
+  ],
+  "key": {
+    "A": {
+      "item": "ic2:iron_casing"
+    },
+    "B": {
+      "item": "ic2:advanced_circuit"
+    },
+    "C": {
+      "item": "ic2:batbox"
+    },
+    "D": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "result": {
+    "id": "ic2:jetpack_electric"
+  },
+  "acceptMirrored": true
+}

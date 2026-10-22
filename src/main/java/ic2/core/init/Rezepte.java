@@ -8,6 +8,7 @@ import ic2.core.block.machine.CannerEnrichRecipeManager;
 import ic2.core.block.machine.EmptyFluidContainerRecipeManager;
 import ic2.core.block.machine.FillFluidContainerRecipeManager;
 import ic2.core.recipe.BasicMachineRecipeManager;
+import ic2.core.recipe.MaceratorCompatibility;
 import ic2.core.recipe.MatterAmplifierRecipeManager;
 import ic2.core.recipe.ScrapboxRecipeManager;
 import ic2.core.recipe.SmeltingRecipeManager;
@@ -94,6 +95,10 @@ public class Rezepte {
 
           for (var holder : recipeManager.getAllRecipesFor(recipeType)) {
             manager.addRecipe(holder.value().recipe(), false);
+          }
+
+          if (recipeType == Ic2RecipeTypes.MACERATOR) {
+            MaceratorCompatibility.addAutomaticRecipes(recipeManager, manager);
           }
 
           return manager;

@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "IAI",
+    "CRC",
+    "IAI"
+  ],
+  "key": {
+    "R": {
+      "tag": "c:plates/steel"
+    },
+    "A": {
+      "item": "ic2:alloy"
+    },
+    "C": {
+      "item": "ic2:carbon_plate"
+    },
+    "I": {
+      "tag": "c:nuggets/iridium"
+    }
+  },
+  "result": {
+    "id": "ic2:jetpack_attachment_plate"
+  },
+  "acceptMirrored": true
+}

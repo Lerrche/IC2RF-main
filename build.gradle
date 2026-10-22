@@ -23,7 +23,10 @@ sourceSets.main.resources {
 repositories {
     mavenCentral()
     maven { url = "https://maven.blamejared.com/" }
-    maven { url "https://api.modrinth.com/maven" }
+    maven { url = "https://api.modrinth.com/maven" }
+    maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
+    maven { url = "https://maven.ithundxr.dev/snapshots" } // Registrate
+    maven { url = "https://maven.theillusivec4.top" } // Curios API
 }
 
 base {
@@ -102,6 +105,26 @@ dependencies {
     runtimeOnly "mezz.jei:jei-1.21.1-neoforge:${jei_version}"
 
     compileOnly "org.appliedenergistics:appliedenergistics2:${ae2_version}:api"
+
+    // Optional Create integration. These are available in dev runs but are not bundled with IC2R.
+    compileOnly("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
+    localRuntime("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
+    compileOnly "net.createmod.ponder:ponder-neoforge:${ponder_version}+mc${minecraft_version}"
+    localRuntime "net.createmod.ponder:ponder-neoforge:${ponder_version}+mc${minecraft_version}"
+    compileOnly "dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}"
+    localRuntime "dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}"
+    compileOnly "com.tterrag.registrate:Registrate:${registrate_version}"
+    localRuntime "com.tterrag.registrate:Registrate:${registrate_version}"
+
+    // Optional Create: Aeronautics integration (Modrinth release for Minecraft 1.21.1 / NeoForge).
+    localRuntime "maven.modrinth:oWaK0Q19:${aeronautics_version}"
+
+    // Sable physics engine required by Create: Aeronautics (NeoForge 1.21.1).
+    localRuntime "maven.modrinth:T9PomCSv:${sable_version}"
+
+    // Curios API is compile-only; the actual mod is loaded only in local dev runs.
+    compileOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}:api"
+    localRuntime "top.theillusivec4.curios:curios-neoforge:${curios_version}"
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'

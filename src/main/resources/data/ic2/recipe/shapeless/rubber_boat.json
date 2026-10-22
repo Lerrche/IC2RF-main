@@ -5,10 +5,10 @@
       "item": "ic2:broken_rubber_boat"
     },
     {
-      "item": "ic2:rubber"
+      "tag": "c:rubber"
     },
     {
-      "item": "ic2:rubber"
+      "tag": "c:rubber"
     }
   ],
   "result": {

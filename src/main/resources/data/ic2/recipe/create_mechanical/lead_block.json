@@ -1,0 +1,23 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "MMM",
+    "MMM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "tag": "c:ingots/lead"
+    }
+  },
+  "result": {
+    "id": "ic2:lead_block"
+  },
+  "acceptMirrored": true
+}

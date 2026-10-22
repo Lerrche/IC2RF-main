@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "AAB",
+    "CCD",
+    " CC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:redstone"
+    },
+    "B": {
+      "item": "ic2:energy_crystal"
+    },
+    "C": {
+      "item": "ic2:alloy"
+    },
+    "D": {
+      "item": "ic2:advanced_circuit"
+    }
+  },
+  "result": {
+    "id": "ic2:mining_laser"
+  },
+  "acceptMirrored": true
+}

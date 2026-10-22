@@ -1,0 +1,22 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "M"
+  ],
+  "key": {
+    "M": {
+      "item": "ic2:machine"
+    }
+  },
+  "result": {
+    "id": "minecraft:iron_ingot",
+    "count": 8
+  },
+  "acceptMirrored": true
+}

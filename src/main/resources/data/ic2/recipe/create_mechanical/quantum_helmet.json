@@ -1,0 +1,38 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "GnG",
+    "ILI",
+    "CNC"
+  ],
+  "key": {
+    "N": {
+      "item": "ic2:hazmat_helmet"
+    },
+    "n": {
+      "item": "ic2:nano_helmet"
+    },
+    "I": {
+      "item": "ic2:iridium"
+    },
+    "L": {
+      "item": "ic2:lapotron_crystal"
+    },
+    "G": {
+      "item": "ic2:reinforced_glass"
+    },
+    "C": {
+      "item": "ic2:advanced_circuit"
+    }
+  },
+  "result": {
+    "id": "ic2:quantum_helmet"
+  },
+  "acceptMirrored": true
+}

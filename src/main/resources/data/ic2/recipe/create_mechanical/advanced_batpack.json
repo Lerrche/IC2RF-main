@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "ABA",
+    "ACA",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "item": "ic2:advanced_re_battery"
+    },
+    "B": {
+      "item": "ic2:circuit"
+    },
+    "C": {
+      "item": "ic2:copper_casing"
+    }
+  },
+  "result": {
+    "id": "ic2:advanced_batpack"
+  },
+  "acceptMirrored": true
+}

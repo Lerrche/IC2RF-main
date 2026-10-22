@@ -1,0 +1,21 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "ic2:rubber_planks"
+    }
+  },
+  "result": {
+    "id": "ic2:rubber_pressure_plate"
+  },
+  "acceptMirrored": true
+}

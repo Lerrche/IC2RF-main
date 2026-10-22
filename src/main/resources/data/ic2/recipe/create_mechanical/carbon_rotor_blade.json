@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "PSP",
+    "PSP",
+    "PSP"
+  ],
+  "key": {
+    "P": {
+      "item": "ic2:carbon_plate"
+    },
+    "S": {
+      "item": "ic2:carbon_mesh"
+    }
+  },
+  "result": {
+    "id": "ic2:carbon_rotor_blade"
+  },
+  "acceptMirrored": true
+}

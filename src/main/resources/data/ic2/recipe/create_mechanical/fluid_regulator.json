@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "III",
+    "CGC",
+    "IBI"
+  ],
+  "key": {
+    "I": {
+      "item": "ic2:iron_casing"
+    },
+    "C": {
+      "item": "ic2:empty_cell"
+    },
+    "G": {
+      "item": "ic2:electric_motor"
+    },
+    "B": {
+      "item": "ic2:circuit"
+    }
+  },
+  "result": {
+    "id": "ic2:fluid_regulator"
+  },
+  "acceptMirrored": true
+}

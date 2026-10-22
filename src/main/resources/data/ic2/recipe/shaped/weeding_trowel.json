@@ -10,7 +10,7 @@
       "item": "minecraft:iron_ingot"
     },
     "B": {
-      "item": "ic2:rubber"
+      "tag": "c:rubber"
     }
   },
   "result": {

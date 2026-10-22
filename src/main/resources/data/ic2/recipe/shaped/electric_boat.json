@@ -10,7 +10,7 @@
       "item": "ic2:insulated_copper_cable"
     },
     "R": {
-      "item": "ic2:iron_plate"
+      "tag": "c:plates/iron"
     },
     "B": {
       "item": "ic2:electric_motor"

@@ -1,0 +1,23 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "UUU",
+    "UUU",
+    "UUU"
+  ],
+  "key": {
+    "U": {
+      "item": "ic2:small_plutonium"
+    }
+  },
+  "result": {
+    "id": "ic2:plutonium"
+  },
+  "acceptMirrored": true
+}

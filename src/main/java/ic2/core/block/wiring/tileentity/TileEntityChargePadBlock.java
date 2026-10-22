@@ -7,6 +7,7 @@ import ic2.core.block.wiring.ContainerChargepadBlock;
 import ic2.core.network.GrowingBuffer;
 import ic2.core.ref.Ic2Items;
 import ic2.core.util.Util;
+import ic2.integration.curios.CuriosCompat;
 import java.util.EnumSet;
 import java.util.List;
 import net.minecraft.core.BlockPos;
@@ -152,6 +153,16 @@ public abstract class TileEntityChargePadBlock extends TileEntityElectricBlock {
         charged = true;
       }
     }
+
+    final boolean[] curiosCharged = {false};
+    CuriosCompat.forEachEquippedStack(
+        player,
+        curioStack -> {
+          if (!curioStack.isEmpty() && this.chargeItem(curioStack, chargeFactor)) {
+            curiosCharged[0] = true;
+          }
+        });
+    charged |= curiosCharged[0];
 
     return charged;
   }

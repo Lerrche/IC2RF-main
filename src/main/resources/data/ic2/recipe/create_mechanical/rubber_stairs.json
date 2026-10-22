@@ -1,0 +1,24 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "P  ",
+    "PP ",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "ic2:rubber_planks"
+    }
+  },
+  "result": {
+    "id": "ic2:rubber_stairs",
+    "count": 4
+  },
+  "acceptMirrored": true
+}

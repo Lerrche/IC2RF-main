@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "ILI",
+    "ILI",
+    "ILI"
+  ],
+  "key": {
+    "I": {
+      "tag": "c:plates/iron"
+    },
+    "L": {
+      "tag": "c:plates/lead"
+    }
+  },
+  "result": {
+    "id": "ic2:reinforced_door"
+  },
+  "acceptMirrored": true
+}

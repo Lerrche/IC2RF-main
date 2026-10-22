@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    " O ",
+    "RGR",
+    "R#R"
+  ],
+  "key": {
+    "R": {
+      "tag": "c:rubber"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "#": {
+      "item": "minecraft:iron_bars"
+    },
+    "O": {
+      "item": "minecraft:orange_dye"
+    }
+  },
+  "result": {
+    "id": "ic2:hazmat_helmet"
+  },
+  "acceptMirrored": true
+}

@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "RCR",
+    "RMR",
+    "RCR"
+  ],
+  "key": {
+    "R": {
+      "item": "ic2:thick_neutron_reflector"
+    },
+    "C": {
+      "item": "ic2:advanced_circuit"
+    },
+    "M": {
+      "item": "ic2:advanced_machine"
+    }
+  },
+  "result": {
+    "id": "ic2:nuke"
+  },
+  "acceptMirrored": true
+}

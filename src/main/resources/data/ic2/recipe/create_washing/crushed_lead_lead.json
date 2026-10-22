@@ -1,0 +1,26 @@
+{
+  "type": "create:splashing",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "ic2:crushed_lead"
+    }
+  ],
+  "results": [
+    {
+      "id": "ic2:purified_lead"
+    },
+    {
+      "id": "ic2:small_sulfur_dust",
+      "count": 3
+    },
+    {
+      "id": "ic2:stone_dust"
+    }
+  ]
+}

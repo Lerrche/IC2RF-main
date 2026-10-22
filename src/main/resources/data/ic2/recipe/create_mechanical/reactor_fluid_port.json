@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "VVV",
+    "VCV",
+    "VVV"
+  ],
+  "key": {
+    "V": {
+      "item": "ic2:reactor_vessel"
+    },
+    "C": {
+      "item": "ic2:empty_cell"
+    }
+  },
+  "result": {
+    "id": "ic2:reactor_fluid_port"
+  },
+  "acceptMirrored": true
+}

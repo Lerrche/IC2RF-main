@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "TcT",
+    "cCc",
+    "TcT"
+  ],
+  "key": {
+    "c": {
+      "tag": "c:dusts/coal"
+    },
+    "C": {
+      "tag": "c:plates/copper"
+    },
+    "T": {
+      "tag": "c:dusts/tin"
+    }
+  },
+  "result": {
+    "id": "ic2:neutron_reflector"
+  },
+  "acceptMirrored": true
+}

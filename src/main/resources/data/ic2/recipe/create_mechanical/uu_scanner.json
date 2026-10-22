@@ -1,0 +1,38 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "ABA",
+    "CDC",
+    "EFE"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:plates/iron"
+    },
+    "B": {
+      "item": "ic2:reinforced_glass"
+    },
+    "C": {
+      "item": "ic2:electric_motor"
+    },
+    "D": {
+      "item": "ic2:luminator"
+    },
+    "E": {
+      "item": "ic2:advanced_circuit"
+    },
+    "F": {
+      "item": "ic2:advanced_machine"
+    }
+  },
+  "result": {
+    "id": "ic2:uu_scanner"
+  },
+  "acceptMirrored": true
+}

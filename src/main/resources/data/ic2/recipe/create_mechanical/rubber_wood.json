@@ -1,0 +1,23 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "LL",
+    "LL"
+  ],
+  "key": {
+    "L": {
+      "item": "ic2:rubber_log"
+    }
+  },
+  "result": {
+    "id": "ic2:rubber_wood",
+    "count": 3
+  },
+  "acceptMirrored": true
+}

@@ -7,7 +7,7 @@
   ],
   "key": {
     "A": {
-      "item": "ic2:iron_plate"
+      "tag": "c:plates/iron"
     },
     "B": {
       "item": "ic2:small_power_unit"

@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "RRR",
+    "AAA",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "ic2:dense_iron_plate"
+    },
+    "A": {
+      "item": "ic2:plutonium"
+    }
+  },
+  "result": {
+    "id": "ic2:rtg_pellet"
+  },
+  "acceptMirrored": true
+}

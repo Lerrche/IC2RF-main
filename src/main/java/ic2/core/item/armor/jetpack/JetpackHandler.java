@@ -27,6 +27,9 @@ import net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent;
 import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import top.theillusivec4.curios.api.CuriosApi;
+import top.theillusivec4.curios.api.type.inventory.ICurioStacksHandler;
+import top.theillusivec4.curios.api.type.inventory.IDynamicStackHandler;
 
 public class JetpackHandler implements IBackupElectricItemManager {
   static final ItemStack jetpack = new ItemStack(Ic2Items.JETPACK_ELECTRIC);
@@ -45,13 +48,43 @@ public class JetpackHandler implements IBackupElectricItemManager {
   }
 
   public static void onPlayerTick(Player player) {
+    // Prefer the normal chest slot so existing behavior remains unchanged.
     ItemStack stack = player.getItemBySlot(EquipmentSlot.CHEST);
+
+    // Curios equipment is not returned by getItemBySlot(EquipmentSlot.CHEST).
+    // If there is no chest-slot jetpack, check the Curios "back" slot.
+    if (!hasJetpack(stack)) {
+      stack = getBackSlotJetpack(player);
+    }
+
     if (hasJetpack(stack)) {
       JetpackLogic.onArmorTick(player.level(), player, stack, getJetpack(stack));
     } else {
       // Only the local client player owns the jetpack loop sound.
       JetpackLogic.stopJetpackSound(player);
     }
+  }
+
+  private static ItemStack getBackSlotJetpack(Player player) {
+    return CuriosApi.getCuriosInventory(player)
+        .map(
+            curios -> {
+              ICurioStacksHandler backHandler = curios.getCurios().get("back");
+              if (backHandler == null) {
+                return ItemStack.EMPTY;
+              }
+
+              IDynamicStackHandler stacks = backHandler.getStacks();
+              for (int i = 0; i < stacks.getSlots(); i++) {
+                ItemStack stack = stacks.getStackInSlot(i);
+                if (hasJetpack(stack)) {
+                  return stack;
+                }
+              }
+
+              return ItemStack.EMPTY;
+            })
+        .orElse(ItemStack.EMPTY);
   }
 
   public static void setJetpackAttached(ItemStack stack, boolean value) {

@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "III",
+    "TBT",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "item": "ic2:iron_casing"
+    },
+    "T": {
+      "item": "ic2:tank"
+    },
+    "B": {
+      "item": "ic2:copper_boiler"
+    },
+    "C": {
+      "item": "ic2:heat_conductor"
+    }
+  },
+  "result": {
+    "id": "ic2:steam_repressurizer"
+  },
+  "acceptMirrored": true
+}

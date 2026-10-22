@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "GGG",
+    "WTW",
+    "GEG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "W": {
+      "item": "ic2:double_insulated_gold_cable"
+    },
+    "T": {
+      "item": "ic2:mv_transformer"
+    },
+    "E": {
+      "item": "ic2:circuit"
+    }
+  },
+  "result": {
+    "id": "ic2:transformer_upgrade"
+  },
+  "acceptMirrored": true
+}

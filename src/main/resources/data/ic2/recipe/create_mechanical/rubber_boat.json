@@ -1,0 +1,25 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    "RBR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "tag": "c:rubber"
+    },
+    "B": {
+      "tag": "minecraft:boats"
+    }
+  },
+  "result": {
+    "id": "ic2:rubber_boat"
+  },
+  "acceptMirrored": true
+}

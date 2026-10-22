@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "pattern": [
+    " T ",
+    " T ",
+    "CMC"
+  ],
+  "key": {
+    "T": {
+      "item": "ic2:tin_can"
+    },
+    "M": {
+      "item": "ic2:machine"
+    },
+    "C": {
+      "item": "ic2:circuit"
+    }
+  },
+  "result": {
+    "id": "ic2:solid_canner"
+  },
+  "acceptMirrored": true
+}
